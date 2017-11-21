@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Courses</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+    <style>
+        body {margin:0;}
+
+
+        body {
+            font-family: "Lato", sans-serif;
+            background-color: #070707;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #070707;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 6px 6px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #fdfffd;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+<nav style="background-color: black" class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a style="font-size: 28px; padding-left: 5.5cm ;margin:0.5cm"; class="navbar-brand" href="#"><b> LH </b></a>
+        </div>
+        <ul class="nav navbar-nav">
+
+            <li><a style="font-size: 18px;margin:0.5cm" href="#">Home</a></li>
+
+
+            <li><form style="font-size: 18px; margin:0.75cm" class="navbar-form navbar-right">
+                <div class="input-group">
+                    <input type="text" width="5cm" class="form-control" placeholder="Search">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form></li>
+            <li class="dropdown"><a style="font-size: 18px;margin:0.5cm" class="dropdown-toggle" data-toggle="dropdown" href="#">Languages<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">German</a></li>
+                    <li><a href="#">Persian</a></li>
+                </ul>
+            </li>
+            <li><a style="font-size: 18px;margin:0.5cm" href="#">FAQ</a></li>
+            <li><a style="font-size: 18px;margin:0.5cm" href="#">Instructor name</a></li>
+        </ul>
+    </div>
+</nav>
+
+<li><div class="sidenav">
+    <a style="padding-top: 3cm" href="#">All Courses</a>
+    <a style="padding-top: 1cm" href="#">My Courses</a>
+    <a style="padding-top: 1cm" href="#">Log out</a>
+
+</div></li>
+
+<div style="padding-left: 7cm" class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <a href="DAM_1.html" target="_blank">
+                    <img src="book%201.jpg" alt="Lights" style="width:100%">
+                    <div class="caption">
+                        <p style="font-size: 20px; text-align: center; color: black">We have some courses which are very well to learn!</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div style="padding:20px 20px 700px"> </div>
+<script>
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-50px";
+        }
+    }
+</script>
+
+</body>
+</html>
+
